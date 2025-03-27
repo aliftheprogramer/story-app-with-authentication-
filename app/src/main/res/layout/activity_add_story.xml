@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="UseSwitchCompatOrMaterialXml">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/edStoryDescription"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/description"
+        android:importantForAccessibility="yes"
+        />
+
+    <EditText
+        android:id="@+id/edLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Latitude"
+        android:importantForAccessibility="yes"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        />
+
+    <EditText
+        android:id="@+id/edLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Longitude"
+        android:importantForAccessibility="yes"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        />
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/selected_image" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/selected_image" />
+
+    <Switch
+        android:id="@+id/switchUseCurrentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use Current Location"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Use Current Location" />
+
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/select_image"
+        android:contentDescription="@string/select_image" />
+
+    <Button
+        android:id="@+id/buttonCamera"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/ambil_gambar_dari_kamera"
+        android:contentDescription="@string/ambil_gambar_dari_kamera" />
+
+    <Button
+        android:id="@+id/buttonAddStory"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/add_story"
+        android:contentDescription="@string/add_story" />
+</LinearLayout>
